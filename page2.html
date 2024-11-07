@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deskripsi Smadaba Bersuara</title>
+   
+    <style>
+       /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #5b6de5, #50d3a2); /* Gradient background */
+    min-height: 100vh; /* Minimum height 100vh to ensure page fills viewport */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top for scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+}
+
+/* Wrapper to center the entire page content */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%; /* Full width */
+    padding-bottom: 40px; /* Space at the bottom for footer */
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Main Content Section */
+.content {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    transform: scale(0.98);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.content:hover {
+    transform: scale(1);
+}
+
+/* Intro Section */
+.intro h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Features Section */
+.features h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+.features li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    padding-left: 20px;
+    position: relative;
+}
+
+.features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #50d3a2;
+    font-size: 24px;
+    top: 0;
+}
+
+/* Call to Action Section */
+/* Call to Action Section */
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Styling untuk kedua tombol */
+.call-to-action .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 16px 32px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-right: 20px; /* Memberi jarak antar tombol */
+}
+
+/* Tombol "Kembali" hover efek */
+.call-to-action .btn:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol "Selanjutnya" dengan warna biru */
+.next-btn {
+    background-color: #007bff; /* Blue color */
+}
+
+.next-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Footer Styling */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Keyframe for fading animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Smadaba Bersuara</h1>
+            <img src="img/smadaba.png" alt="Logo Smadaba" class="logo">
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+            <section class="intro">
+                <h2>Deskripsi Platform</h2>
+                <p>SMADABA BERSUARA adalah platform digital yang dirancang untuk menjadi saluran komunikasi langsung antara siswa dengan pihak sekolah. Tujuan utamanya adalah untuk menampung aspirasi, keluhan, serta ide-ide dari siswa yang mungkin belum tersampaikan atau terealisasi melalui jalur formal yang ada. Melalui website ini, siswa dapat dengan mudah mengajukan berbagai usulan terkait fasilitas, kinerja guru, kegiatan sekolah, kurikulum, hingga lingkungan belajar yang lebih baik, maupun kritik dan saran yang tidak mengandung SARA.</p>
+            </section>
+
+            <section class="features">
+                <h3>Fitur Utama</h3>
+                <ul>
+                    <li><strong>Formulir Pengajuan Aspirasi:</strong> Siswa dapat mengisi formulir untuk menyampaikan saran atau keluhan terkait aspek-aspek tertentu di sekolah.</li>
+                    <li><strong>Forum Diskusi:</strong> Sebagai ruang bagi siswa untuk berdiskusi tentang isu-isu yang relevan dan mendengarkan pendapat teman-temannya.</li>
+                    <li><strong>Pembaruan Respon:</strong> Setiap aspirasi yang diajukan akan diberikan respon dan perkembangan dari pihak sekolah, memastikan transparansi dan tindak lanjut yang jelas.</li>
+                    <li><strong>Pelaporan Masalah:</strong> Fitur untuk melaporkan masalah mendesak yang membutuhkan perhatian cepat dari pihak sekolah, seperti kerusakan fasilitas atau masalah lainnya.</li>
+                    
+            </section>
+            <section class="call-to-action">
+                <p>Dengan adanya website ini, diharapkan komunikasi antara siswa dan sekolah menjadi lebih terbuka, efektif, dan mampu menciptakan lingkungan belajar yang lebih inklusif dan responsif terhadap kebutuhan siswa.</p>
+                <!-- Tombol Kembali -->
+                <a href="index.html" class="btn">Kembali</a>
+                
+                <!-- Tombol Selanjutnya -->
+                <a href="page3.html" class="btn next-btn">Selanjutnya</a>
+            </section>
+            
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2024 Smadaba. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pengajuan Aspirasi</title>
+   
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #5b6de5, #50d3a2); /* Gradient background */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to the top for scrolling */
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        /* Wrapper to center the entire page content */
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 40px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Content Section */
+        .content {
+            text-align: left;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 900px;
+            transform: scale(0.98);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 40px;
+        }
+
+        .content:hover {
+            transform: scale(1);
+        }
+
+        /* Deskripsi Section */
+        .description p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Google Form Section */
+        .form-container {
+            margin-bottom: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Call-to-Action Button Section */
+        .call-to-action {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .call-to-action .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 16px 32px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .call-to-action .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer Section */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        /* Keyframe for fading animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Smadaba Bersuara</h1>
+            <img src="img/smadaba.png" alt="Logo Smadaba" class="logo">
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Deskripsi Section -->
+            <section class="description">
+                <h2>Formulir Pengajuan Aspirasi</h2>
+                <p>Silakan klik link di bawah ini untuk mengakses formulir pengajuan aspirasi atau keluhan. Melalui formulir ini, Anda bisa memberikan saran atau keluhan terkait berbagai hal di sekolah. Setiap pengajuan akan diproses dan direspon oleh pihak sekolah secara transparan.</p>
+                <p><strong>Klik link berikut untuk mengisi formulir:</strong></p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfD0GQkOKw3JINW9xWlPOf4Lw9inR2X1RDLso6G8bdfvdxaKw/viewform" target="_blank" class="btn">Isi Formulir</a>
+            </section>
+
+            <!-- Google Form Embedded -->
+            <section class="form-container">
+                <h3>Atau, Anda dapat langsung mengisi formulir di bawah ini:</h3>
+                <iframe src="https://forms.gle/m1THwtMdne3Xi5cK6"></iframe>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="call-to-action">
+                <a href="index.html" class="btn">Kembali ke Halaman Utama</a>
+            </section>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2024 Smadaba. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
